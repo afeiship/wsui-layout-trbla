@@ -1,0 +1,46 @@
+@import "../dist/index.scss";
+
+.test-wsui-layout-trbla {
+  border: 1px solid red;
+}
+
+$color-map: (
+  1: lightblue,
+  2: lightgreen,
+  3: purple,
+  4: rgb(22, 43, 165),
+  5: rgb(110, 145, 55),
+);
+
+@each $key, $value in $color-map {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+
+.container {
+  &.is-y {
+    .wsui-layout-trbla {
+      min-height: 300px;
+    }
+  }
+
+  > .is-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .wsui-layout-trbla > * {
+    padding: 20px;
+  }
+
+  dl {
+    dt {
+      padding: 5px 14px;
+      border-left: 4px solid #ccc;
+      background: #eee;
+      margin-bottom: 10px;
+    }
+  }
+}

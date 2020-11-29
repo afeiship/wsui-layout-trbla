@@ -1,0 +1,25 @@
+/*!
+ * name: @jswork/wsui-layout-trbla
+ * description: Simply flexable trbla layout for wsui.
+ * homepage: https://github.com/afeiship/wsui-layout-trbla
+ * version: 1.0.0
+ * date: 2020-11-29 15:28:23
+ * license: MIT
+ */
+/*wsui-layout-trbla Start*/
+.wsui-layout-trbla {
+  display: flex; }
+  .wsui-layout-trbla[data-value="la"], .wsui-layout-trbla[data-value="lar"], .wsui-layout-trbla[data-value="ar"], .wsui-layout-trbla[data-value="lr"] {
+    width: 100%;
+    flex-direction: row; }
+  .wsui-layout-trbla[data-value="ta"], .wsui-layout-trbla[data-value="tab"], .wsui-layout-trbla[data-value="ab"], .wsui-layout-trbla[data-value="tb"] {
+    height: 100%;
+    flex-direction: column; }
+  .wsui-layout-trbla[data-value="la"] > *:nth-child(2), .wsui-layout-trbla[data-value="lar"] > *:nth-child(2), .wsui-layout-trbla[data-value="ta"] > *:nth-child(2), .wsui-layout-trbla[data-value="tab"] > *:nth-child(2) {
+    flex: 1; }
+  .wsui-layout-trbla[data-value="ar"] > *:nth-child(1), .wsui-layout-trbla[data-value="ab"] > *:nth-child(1) {
+    flex: 1; }
+  .wsui-layout-trbla[data-value="lr"], .wsui-layout-trbla[data-value="tb"] {
+    justify-content: space-between; }
+
+/*wsui-layout-trbla End*/

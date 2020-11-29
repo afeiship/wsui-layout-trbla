@@ -1,0 +1,62 @@
+/*wsui-layout-trbla Start*/
+$wsui-layout-trbla-options: () !default;
+
+// left -> auto -> right
+// 'la',
+// 'lar',
+// 'ar',
+// 'lr',
+
+// top -> auto -> bottom
+// 'ta',
+// 'tab',
+// 'ab',
+// 'tb'
+
+.wsui-layout-trbla {
+  // your styles
+  display: flex;
+
+  &[data-value="la"],
+  &[data-value="lar"],
+  &[data-value="ar"],
+  &[data-value="lr"] {
+    width: 100%;
+    flex-direction: row;
+  }
+
+
+  &[data-value="ta"],
+  &[data-value="tab"],
+  &[data-value="ab"],
+  &[data-value="tb"] {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  &[data-value="la"],
+  &[data-value="lar"],
+  &[data-value="ta"],
+  &[data-value="tab"] {
+    & > * {
+      &:nth-child(2) {
+        flex: 1;
+      }
+    }
+  }
+
+  &[data-value="ar"],
+  &[data-value="ab"] {
+    & > * {
+      &:nth-child(1) {
+        flex: 1;
+      }
+    }
+  }
+
+  &[data-value="lr"],
+  &[data-value="tb"] {
+    justify-content: space-between;
+  }
+}
+/*wsui-layout-trbla End*/

@@ -1,0 +1,14 @@
+build
+node_modules
+src
+docs
+test
+__tests__
+.prettierrc
+.editorconfig
+gulpfile.js
+LICENSE.txt
+Rakefile
+server.js
+.prettierrc
+.release-it.json
