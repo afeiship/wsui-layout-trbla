@@ -32,5 +32,15 @@
   },
   "dependencies": {
     "postcss": "^8.1.10"
-  }
+  },
+  "keywords": [
+    "wsui",
+    "flexbox",
+    "layout",
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "auto"
+  ]
 }
