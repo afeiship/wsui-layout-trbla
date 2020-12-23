@@ -15,6 +15,7 @@
       .pipe(gulp.dest('dist'))
       .pipe($.sass())
       .pipe($.postcss([autoprefixer()]))
+      .pipe($.rename('style.css'))
       .pipe(gulp.dest('dist'));
   });
 })();
