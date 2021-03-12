@@ -16,6 +16,13 @@ $wsui-layout-trbla-options: () !default;
 .wsui-layout-trbla {
   // your styles
   display: flex;
+  $layout-align-items: (stretch, center, flex-start, flex-end, space-between, space-around, baseline, initial, inherit);
+
+  @each $value in $layout-align-items {
+    &[data-align="#{$value}"] {
+      align-items: $value;
+    }
+  }
 
   &[data-value="la"],
   &[data-value="lar"],
@@ -24,7 +31,6 @@ $wsui-layout-trbla-options: () !default;
     width: 100%;
     flex-direction: row;
   }
-
 
   &[data-value="ta"],
   &[data-value="tab"],

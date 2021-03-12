@@ -3,12 +3,48 @@
  * description: Simply flexable trbla layout for wsui.
  * homepage: https://github.com/afeiship/wsui-layout-trbla
  * version: 1.0.2
- * date: 2020-12-23 14:59:33
+ * date: 2021-03-12 21:09:24
  * license: MIT
  */
 /*wsui-layout-trbla Start*/
 .wsui-layout-trbla {
   display: flex;
+}
+
+.wsui-layout-trbla[data-align="stretch"] {
+  align-items: stretch;
+}
+
+.wsui-layout-trbla[data-align="center"] {
+  align-items: center;
+}
+
+.wsui-layout-trbla[data-align="flex-start"] {
+  align-items: flex-start;
+}
+
+.wsui-layout-trbla[data-align="flex-end"] {
+  align-items: flex-end;
+}
+
+.wsui-layout-trbla[data-align="space-between"] {
+  align-items: space-between;
+}
+
+.wsui-layout-trbla[data-align="space-around"] {
+  align-items: space-around;
+}
+
+.wsui-layout-trbla[data-align="baseline"] {
+  align-items: baseline;
+}
+
+.wsui-layout-trbla[data-align="initial"] {
+  align-items: initial;
+}
+
+.wsui-layout-trbla[data-align="inherit"] {
+  align-items: inherit;
 }
 
 .wsui-layout-trbla[data-value="la"], .wsui-layout-trbla[data-value="lar"], .wsui-layout-trbla[data-value="ar"], .wsui-layout-trbla[data-value="lr"] {
