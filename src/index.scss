@@ -24,6 +24,11 @@ $wsui-layout-trbla-options: () !default;
     }
   }
 
+  &[data-value="center"] {
+    align-items: center;
+    justify-content: center;
+  }
+
   &[data-value="la"],
   &[data-value="lar"],
   &[data-value="ar"],

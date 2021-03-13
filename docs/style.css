@@ -3,7 +3,7 @@
  * description: Simply flexable trbla layout for wsui.
  * homepage: https://github.com/afeiship/wsui-layout-trbla
  * version: 1.0.3
- * date: 2021-03-12 21:11:21
+ * date: 2021-03-13 11:23:37
  * license: MIT
  */
 /*wsui-layout-trbla Start*/
@@ -45,6 +45,11 @@
 
 .wsui-layout-trbla[data-align="inherit"] {
   align-items: inherit;
+}
+
+.wsui-layout-trbla[data-value="center"] {
+  align-items: center;
+  justify-content: center;
 }
 
 .wsui-layout-trbla[data-value="la"], .wsui-layout-trbla[data-value="lar"], .wsui-layout-trbla[data-value="ar"], .wsui-layout-trbla[data-value="lr"] {
