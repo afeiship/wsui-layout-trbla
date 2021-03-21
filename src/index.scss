@@ -24,6 +24,15 @@ $wsui-layout-trbla-options: () !default;
     }
   }
 
+  // flex-wrap:
+  &[data-wrap="true"] {
+    flex-wrap: wrap;
+  }
+
+  &[data-wrap="false"] {
+    flex-wrap: nowrap;
+  }
+
   &[data-value="center"] {
     align-items: center;
     justify-content: center;
