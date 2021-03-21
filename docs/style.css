@@ -2,8 +2,8 @@
  * name: @jswork/wsui-layout-trbla
  * description: Simply flexable trbla layout for wsui.
  * homepage: https://github.com/afeiship/wsui-layout-trbla
- * version: 1.0.4
- * date: 2021-03-13 11:24:18
+ * version: 1.0.5
+ * date: 2021-03-21 19:29:32
  * license: MIT
  */
 /*wsui-layout-trbla Start*/
@@ -45,6 +45,14 @@
 
 .wsui-layout-trbla[data-align="inherit"] {
   align-items: inherit;
+}
+
+.wsui-layout-trbla[data-wrap="true"] {
+  flex-wrap: wrap;
+}
+
+.wsui-layout-trbla[data-wrap="false"] {
+  flex-wrap: nowrap;
 }
 
 .wsui-layout-trbla[data-value="center"] {
