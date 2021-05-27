@@ -14,8 +14,8 @@ $wsui-layout-trbla-options: () !default;
 // 'tb'
 
 .wsui-layout-trbla {
-  // your styles
   display: flex;
+  box-sizing: border-box;
   $layout-align-items: (stretch, center, flex-start, flex-end, space-between, space-around, baseline, initial, inherit);
 
   @each $value in $layout-align-items {
