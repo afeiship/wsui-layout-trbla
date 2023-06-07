@@ -70,7 +70,8 @@ $name: map-get($wsui-layout-trbla-options, name);
   &[data-value='lar'],
   &[data-value='ta'],
   &[data-value='tab'] {
-    & > * {
+    & > view,
+    & > text {
       &:nth-child(2) {
         flex: 1;
       }
@@ -79,7 +80,8 @@ $name: map-get($wsui-layout-trbla-options, name);
 
   &[data-value='ar'],
   &[data-value='ab'] {
-    & > * {
+    & > view,
+    & > text {
       &:nth-child(1) {
         flex: 1;
       }

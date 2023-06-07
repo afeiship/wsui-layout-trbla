@@ -3,7 +3,7 @@
  * description: Simply flexable trbla layout for wsui.
  * homepage: https://github.com/afeiship/wsui-layout-trbla
  * version: 1.0.6
- * date: 2021-05-27 13:28:15
+ * date: 2023-06-07 23:14:34
  * license: MIT
  */
 /*wsui-layout-trbla Start*/
@@ -11,75 +11,58 @@
   display: flex;
   box-sizing: border-box;
 }
-
-.wsui-layout-trbla[data-align="stretch"] {
+.wsui-layout-trbla[data-align=stretch] {
   align-items: stretch;
 }
-
-.wsui-layout-trbla[data-align="center"] {
+.wsui-layout-trbla[data-align=center] {
   align-items: center;
 }
-
-.wsui-layout-trbla[data-align="flex-start"] {
+.wsui-layout-trbla[data-align=flex-start] {
   align-items: flex-start;
 }
-
-.wsui-layout-trbla[data-align="flex-end"] {
+.wsui-layout-trbla[data-align=flex-end] {
   align-items: flex-end;
 }
-
-.wsui-layout-trbla[data-align="space-between"] {
+.wsui-layout-trbla[data-align=space-between] {
   align-items: space-between;
 }
-
-.wsui-layout-trbla[data-align="space-around"] {
+.wsui-layout-trbla[data-align=space-around] {
   align-items: space-around;
 }
-
-.wsui-layout-trbla[data-align="baseline"] {
+.wsui-layout-trbla[data-align=baseline] {
   align-items: baseline;
 }
-
-.wsui-layout-trbla[data-align="initial"] {
+.wsui-layout-trbla[data-align=initial] {
   align-items: initial;
 }
-
-.wsui-layout-trbla[data-align="inherit"] {
+.wsui-layout-trbla[data-align=inherit] {
   align-items: inherit;
 }
-
-.wsui-layout-trbla[data-wrap="true"] {
+.wsui-layout-trbla[data-wrap=true] {
   flex-wrap: wrap;
 }
-
-.wsui-layout-trbla[data-wrap="false"] {
+.wsui-layout-trbla[data-wrap=false] {
   flex-wrap: nowrap;
 }
-
-.wsui-layout-trbla[data-value="center"] {
+.wsui-layout-trbla[data-value=center] {
   align-items: center;
   justify-content: center;
 }
-
-.wsui-layout-trbla[data-value="la"], .wsui-layout-trbla[data-value="lar"], .wsui-layout-trbla[data-value="ar"], .wsui-layout-trbla[data-value="lr"] {
+.wsui-layout-trbla[data-value=la], .wsui-layout-trbla[data-value=lar], .wsui-layout-trbla[data-value=ar], .wsui-layout-trbla[data-value=lr] {
   width: 100%;
   flex-direction: row;
 }
-
-.wsui-layout-trbla[data-value="ta"], .wsui-layout-trbla[data-value="tab"], .wsui-layout-trbla[data-value="ab"], .wsui-layout-trbla[data-value="tb"] {
+.wsui-layout-trbla[data-value=ta], .wsui-layout-trbla[data-value=tab], .wsui-layout-trbla[data-value=ab], .wsui-layout-trbla[data-value=tb] {
   height: 100%;
   flex-direction: column;
 }
-
-.wsui-layout-trbla[data-value="la"] > *:nth-child(2), .wsui-layout-trbla[data-value="lar"] > *:nth-child(2), .wsui-layout-trbla[data-value="ta"] > *:nth-child(2), .wsui-layout-trbla[data-value="tab"] > *:nth-child(2) {
+.wsui-layout-trbla[data-value=la] > *:nth-child(2), .wsui-layout-trbla[data-value=lar] > *:nth-child(2), .wsui-layout-trbla[data-value=ta] > *:nth-child(2), .wsui-layout-trbla[data-value=tab] > *:nth-child(2) {
   flex: 1;
 }
-
-.wsui-layout-trbla[data-value="ar"] > *:nth-child(1), .wsui-layout-trbla[data-value="ab"] > *:nth-child(1) {
+.wsui-layout-trbla[data-value=ar] > *:nth-child(1), .wsui-layout-trbla[data-value=ab] > *:nth-child(1) {
   flex: 1;
 }
-
-.wsui-layout-trbla[data-value="lr"], .wsui-layout-trbla[data-value="tb"] {
+.wsui-layout-trbla[data-value=lr], .wsui-layout-trbla[data-value=tb] {
   justify-content: space-between;
 }
 
@@ -97,27 +80,24 @@
 }
 
 .bg-4 {
-  background-color: #162ba5;
+  background-color: rgb(22, 43, 165);
 }
 
 .bg-5 {
-  background-color: #6e9137;
+  background-color: rgb(110, 145, 55);
 }
 
 .container.is-y .wsui-layout-trbla {
   min-height: 300px;
 }
-
 .container > .is-item {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
 }
-
 .container .wsui-layout-trbla > * {
   padding: 20px;
 }
-
 .container dl dt {
   padding: 5px 14px;
   border-left: 4px solid #ccc;

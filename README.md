@@ -15,6 +15,7 @@ npm i @jswork/wsui-layout-trbla
 ```scss
 // use sass
 @import '~@jswork/wsui-layout-trbla/dist/index.scss';
+@import '~@jswork/wsui-layout-trbla/dist/index.weapp.scss';
 // use css
 @import '~@jswork/wsui-layout-trbla/dist/style.css';
 ```
